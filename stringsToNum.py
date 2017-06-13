@@ -3,8 +3,8 @@ import pandas as pd
 
 def main():
 	"""
-	Adds on columns for category, pddistrict, and action_taken that replace the strings with numbers 
-	Takes a few minutes to run
+	Adds on columns for category, pddistrict, and action_taken that replace the strings with numbers. 
+	Takes a few minutes to run.
 	"""
 	
 	# Read in the data:
@@ -56,16 +56,6 @@ def main():
 	# Add new column with the number values:
 	actionNums = [actionToNum[row["action_taken"]] for index, row in crime.iterrows()]
 	crime["action_takenNum"] = actionNums
-
-	
-	# DAYOFWEEK
-	# =========
-	dayToNum = {"Monday" : 1, "Tuesday" : 2, "Wednesday" : 3, "Thursday" : 4, "Friday" : 5, "Saturday" : 6, "Sunday" : 7}
-	
-	# Add new column with the number values:
-	dayNums = [dayToNum[row["DayOfWeek"]] for index, row in crime.iterrows()]
-	crime["DayOfWeekNum"] = dayNums
-
 	
 	
 	# Save the updated csv:
