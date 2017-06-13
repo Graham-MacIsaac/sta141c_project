@@ -56,11 +56,16 @@ def main():
 	# Add new column with the number values:
 	actionNums = [actionToNum[row["action_taken"]] for index, row in crime.iterrows()]
 	crime["action_takenNum"] = actionNums
+
 	
-	# Save dictionary to text file to reference later:
-	f = open("actionToNum.txt","w")
-	f.write( str(actionToNum) )
-	f.close()
+	# DAYOFWEEK
+	# =========
+	dayToNum = {"Monday" : 1, "Tuesday" : 2, "Wednesday" : 3, "Thursday" : 4, "Friday" : 5, "Saturday" : 6, "Sunday" : 7}
+	
+	# Add new column with the number values:
+	dayNums = [dayToNum[row["DayOfWeek"]] for index, row in crime.iterrows()]
+	crime["DayOfWeekNum"] = dayNums
+
 	
 	
 	# Save the updated csv:
