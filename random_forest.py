@@ -11,9 +11,8 @@ data = pd.read_csv('policeZipNum.csv')
 def main():
     
     n = len(data)
-    else:
-        X = np.array(data[['PdDistrictNum', 'CategoryNumber', 'zipcode']])
-        y = np.array(data[['action_takenNum']])
+    X = np.array(data[['PdDistrictNum', 'CategoryNumber', 'zipcode']])
+    y = np.array(data[['action_takenNum']])
 
     X_train, y_train = X[:round(n*0.6)], y[:round(n*0.6)]
     X_valid, y_valid = X[round(n*0.6):round(n*0.8)], y[round(n*0.6):round(n*0.8)]
