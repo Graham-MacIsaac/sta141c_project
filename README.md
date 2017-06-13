@@ -26,11 +26,11 @@ Contains the information for what numbers were mapped to each category.
 # districtToNum.txt  
 Contains the information for what numbers were mapped to each police district. 
 
-# SVM.py
+# SVM10.py
 |    |    |  
 |----|----|  
-Run:						| `python SVM.py`
-Does:						| Prints the accuracy of predicting action_taken from category, pddistrict, and zipcode using support vector machine
+Run:						| `python SVM10.py`
+Does:						| Prints the accuracy of predicting action_taken from category, pddistrict, and zipcode using support vector machine for 10% of the data
 Have in the same folder:	| `policeZipNum.csv`
 
 # logistic_regression.R  
