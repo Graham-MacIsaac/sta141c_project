@@ -54,9 +54,9 @@ crime_test <- crime[-train_ind, ]
 #                    data = crime_train)
 
 ## ------------------------------------------------------------------------
-action.model =  glm(formula = action_taken ~ CategoryNumber + PdDistrictNum + zipcode + DayOfWeek, 
-                   family = binomial(logit), 
-                   data = crime_train)
+action.model =  glm(formula = action_taken ~ CategoryNumber + PdDistrictNum + zipcode, # + DayOfWeek
+                    family = binomial(logit), 
+                    data = crime_train)
 action.model
 
 ## ------------------------------------------------------------------------
@@ -71,6 +71,6 @@ crime_predicted_bin <- crime_predicted > 0.5
 
 prediciton_accuracy <- mean(crime_predicted_bin == as.logical(crime_test$action_taken))
 
-print("Prediction accuracy: ", prediciton_accuracy)
+paste("Prediction accuracy: ", prediciton_accuracy)
 
 
