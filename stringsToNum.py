@@ -64,7 +64,7 @@ def main():
 	
 	# Add new column with the number values:
 	dayNums = [dayToNum[row["DayOfWeek"]] for index, row in crime.iterrows()]
-	crime["DayOfWeekNum"] = dayNumsNums
+	crime["DayOfWeekNum"] = dayNums
 
 	
 	
