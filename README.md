@@ -13,7 +13,7 @@ Here is information on how to run all of our files. Watch out for the libraries 
 # stringsToNum.py
 
 	Run:						python stringsToNum.py
-	Does:						Adds three extra columns to the data with a number matching for each string predictor we are using
+	Does:						Adds four extra columns to the data with a number mapping for each string predictor we are using
 	Returns: 					policeZipNum.csv
 	Have in the same folder:	policeWithZip.csv
 
