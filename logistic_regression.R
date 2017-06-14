@@ -54,7 +54,7 @@ crime_test <- crime[-train_ind, ]
 #                    data = crime_train)
 
 ## ------------------------------------------------------------------------
-action.model =  glm(formula = action_taken ~ CategoryNumber + PdDistrictNum + zipcode, # + DayOfWeek
+action.model =  glm(formula = action_taken ~ Category + PdDistrictNum + zipcode, # + DayOfWeek
                     family = binomial(logit), 
                     data = crime_train)
 action.model
