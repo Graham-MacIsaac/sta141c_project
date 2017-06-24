@@ -41,4 +41,11 @@ Have in the same folder:	| `policeZipNum.csv`
 | Does:						| Prints the model and trainaing accuracy of logistic regression to predict if an action was taken for an incident |  
 | Have in the same folder:		| `policeZipNum.csv` |  
 
+# random_forest.py  
+
+|    |    |  
+|----|----|  
+| Run:						| `python random_forest.py` |  
+| Does:						| Prints trainaing accuracy of a random forest with 15 trees to predict if an action was taken for an incident |  
+| Have in the same folder:		| `policeZipNum.csv` |  
 
